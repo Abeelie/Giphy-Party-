@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <center>
+      <h1>Giphy Party!</h1>
+    </center>
+
+    <!-- the form was eliminated since it was not necessary, only with the onclick on the buttons would serve us to make the call to our javascript functions -->
+    <div class="row justify-content-center">
+      <div class="col-12 ">
+        <div class="card-body row no-gutters align-items-center">
+          <div class="col">
+            <input class="form-control form-control-lg form-control-borderless" type="search" id="search"
+              placeholder="Search topics or keywords" value="">
+          </div>
+          <div class="col-auto">
+            <button onclick="submission()" class="btn btn-lg btn-success" id="button1" type="submit">Search</button>
+            <button onclick="removeGif()" class="btn btn-lg btn-danger" id="button2" type="submit">Delete</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class='row justify-content-center' id="gif-area">
+
+    </div>
+ 
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
